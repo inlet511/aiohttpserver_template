@@ -1,0 +1,12 @@
+<!--index.html-->
+{% set title = "Main" %}
+
+{% if articles %}
+    <ul>
+    {% for article in articles %}
+        <li>{{ article.title }}</li>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>No articles are available.</p>
+{% endif %}
